@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+    <title>Retail AI</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body onload="getURL()">
+
+    
+    <header class="header_section">
+        <div class="container">
+           <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html"><img width="200" src="images/TEKsystems_logo_tagline_.jpg" alt="#"  style="margin-left: -2%;"/></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav">
+                    <li class="nav-item active">
+                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                           <a class="nav-link"  href="cart.html">
+                              <i class="fa" style="font-size:24px">&#xf07a;</i>
+                              <span class='badge badge-warning' id='CartCount'></span>
+                           </a>
+                    </li>
+
+                    <form class="form-inline">
+                       <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                       <i class="fa fa-search" aria-hidden="true"></i>
+                       </button>
+                    </form>
+                 </ul>
+              </div>
+           </nav>
+        </div>
+
+        <div class="container">              
+              <img src="/images/sale.png" style="align-items:center; max-height: 80vh; max-width: 200vh; margin-left: 20%;">
+        </div>
+
+     </header>
+      
+
+
+    <br><br>
+    <main id="main">
+        <h3 style="text-align: center;">Come,Shop With Us</h3>
+        <br>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="inputBarSpace">
+                            <input type="text" class="form-control" id="inputBar" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-success" id="submit" onclick="getResponse()">Search</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="row" id="response">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                      <div class="full">
+                         <div class="logo_footer">
+                           <a href="#"><img width="50" src="images/logo.jpg" alt="#" /></a>
+                         </div>
+                         <div class="information_f">
+                           <p><strong>ADDRESS:</strong> 20 White House, Old Town USA</p>
+                           <p><strong>TELEPHONE:</strong> +91 999 888 7775</p>
+                           <p><strong>EMAIL:</strong> gcp@gmail.com</p>
+                         </div>
+                      </div>
+                  </div>
+                  <div class="col-md-8">
+                     <div class="row">
+                     <div class="col-md-7">
+                        <div class="row">
+                           <div class="col-md-6">
+                        <div class="widget_menu">
+                           <h3>Menu</h3>
+                           <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Testimonial</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="widget_menu">
+                           <h3>Account</h3>
+                           <ul>
+                              <li><a href="#">Account</a></li>
+                              <li><a href="#">Checkout</a></li>
+                              <li><a href="#">Login</a></li>
+                              <li><a href="#">Register</a></li>
+                              <li><a href="#">Shopping</a></li>
+                              <li><a href="#">Widget</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                        </div>
+                     </div>     
+                     <div class="col-md-5">
+                        <div class="widget_menu">
+                           <h3>Newsletter</h3>
+                           <div class="information_f">
+                             <p>Subscribe by our newsletter.</p>
+                           </div>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- footer end -->
+         <div class="cpy_">
+            <p class="mx-auto">© 2022 All Rights Reserved By <a href="#">TEKsystems Global Services</a><br>       
+            </p>
+         </div>
+
+
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
